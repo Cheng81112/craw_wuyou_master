@@ -141,18 +141,15 @@ for page in range(25, 30):
         print(sql)
         # try:
         cur.execute(sql)
-
         conn.commit()  # 进行数据库提交，写入数据库
 
 # 关闭游标
 cur.close()
 # 提交
 conn.commit()
-
 # 关闭数据库连接
 conn.close()
-
-# 打印结果
+# 成功爬取数据并写入数据库
 print("")
 print("Done! ")
 print("恭喜你！数据爬取结束。")
