@@ -134,7 +134,8 @@ for page in range(25, 30):
 
         # sql = """insert into INFORMATION values{}""".format(data)
 
-        sql = 'INSERT INTO INFORMATION(pos,company,city,exp,fuli,shijian,guimo,yewu,leixing,href) VALUES ("{}","{}","{}","{}","{}","{}","{}","{}","{}","{}")'.format(dic['职位名称'], dic['公司名称'], dic['所在城市'],
+        sql = 'INSERT INTO INFORMATION(pos,company,city,exp,fuli,shijian,guimo,yewu,leixing,href) VALUES ' \
+              '("{}","{}","{}","{}","{}","{}","{}","{}","{}","{}")'.format(dic['职位名称'], dic['公司名称'], dic['所在城市'],
                          dic['经验要求'], dic['公司福利'], dic['发布时间'],
                          dic['公司规模'], dic['业务范围'], dic['公司类型'],
                          dic['详情页面'])
